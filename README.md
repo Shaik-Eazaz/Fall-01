@@ -10,5 +10,7 @@ pkg install python
 
 then git clone https://github.com/Shaik-Eazaz/Fall-01
 
+cd Fall-01
+
 
 python Fall-01
