@@ -66,7 +66,7 @@ def matrix(iterations, sleep_time=.08):
         for text in messages:
             d.set_vertical(text.x, text.y, text)
             text.move()
-        sys.stdout.write('\034[1m\034[33m%s\034[0m\r' % d)
+        sys.stdout.write('\033[1m\033[32m%s\033[0m\r' % d)
         sys.stdout.flush()
         time.sleep(sleep_time)
 
@@ -76,5 +76,5 @@ if __name__ == '__main__':
         try:
             matrix(150)
         except KeyboardInterrupt:
-            sys.stdout.write('\n\034[1m\034[33m=== Matrix Stopped ====\033[0m\n')
+            sys.stdout.write('\n\033[1m\033[32m=== Matrix Stopped ====\032[0m\n')
             sys.exit()
